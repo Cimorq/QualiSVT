@@ -1,7 +1,3 @@
-Here is the complete, updated `README.md` code. I have completed the Python section, added the exact download links for all required external tools, explicitly stated the `PATH` vs. `Bin` folder rule, and emphasized the `OpenHardwareMonitor` background requirement.
-
-You can copy and paste this entire block directly into your GitHub repository:
-
 ```markdown
 # 🎬 QualiSVT v1.0.2
 **Advanced Video Encoder & Quality Assessment Tool**
