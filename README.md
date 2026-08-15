@@ -1,3 +1,8 @@
+Here is the complete, updated `README.md` code. I have completed the Python section, added the exact download links for all required external tools, explicitly stated the `PATH` vs. `Bin` folder rule, and emphasized the `OpenHardwareMonitor` background requirement.
+
+You can copy and paste this entire block directly into your GitHub repository:
+
+```markdown
 # 🎬 QualiSVT v1.0.4
 **Advanced Video Encoder & Quality Assessment Tool**
 
@@ -55,3 +60,51 @@ To ensure all features work perfectly, make sure the following requirements are 
 * Required Python libraries:
   ```bash
   pip install psutil tkinterdnd2
+  ```
+  *(Note: `psutil` is required for resource management, and `tkinterdnd2` enables Drag & Drop functionality in the GUI).*
+
+### 2. External Binaries & Tools
+For the application to function, the following standalone `.exe` files must either be added to your system's `PATH` environment variable, **OR** placed in a folder named `Bin` directly next to the `QualiSVT-1.0.4.py` script.
+
+* **FFmpeg & FFprobe**: The core processing and encoding engine.
+  * *Recommended Build:* [FFmpeg-Builds-SVT-AV1-HDR](https://github.com/QuickFatHedgehog/FFmpeg-Builds-SVT-AV1-HDR/releases/latest)
+* **HandBrakeCLI**: Required only if you plan to use the HandBrake engine instead of FFmpeg.
+  * *Recommended Build:* [HandBrake-SVT-AV1-Tritium](https://github.com/Uranite/HandBrake-SVT-AV1-Tritium/releases)
+* **FFVship**: Required for ultra-fast GPU calculation of advanced metrics (SSIMULACRA2, Butteraugli, CVVDP).
+  * *Download Link:* [FFVship Releases](https://codeberg.org/Line-fr/Vship/releases)
+
+### 3. Power Tracking Setup (Open Hardware Monitor)
+For QualiSVT to calculate Watts (W) and Total Energy (Wh) during encoding:
+* **[Open Hardware Monitor](https://openhardwaremonitor.org/)** must be downloaded and **running in the background** *before* you start the encoding process. QualiSVT will automatically hook into its telemetry to calculate your power consumption.
+
+---
+
+## 🚀 Installation & Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Cimorq/QualiSVT.git
+   cd QualiSVT
+   ```
+2. Install the required Python dependencies:
+   ```bash
+   pip install psutil tkinterdnd2
+   ```
+3. Create a directory named `Bin` in the root folder and place your downloaded executables inside (`ffmpeg.exe`, `ffprobe.exe`, `FFVship.exe`, `HandBrakeCLI.exe`).
+4. Run the application:
+   ```bash
+   python QualiSVT-1.0.2.py
+   ```
+5. Drag and drop your video files into the queue, select your target metrics in the **Quality Metrics** tab, and hit **Start Encoding**.
+
+---
+
+## 👨‍💻 Author & Credits
+
+* **Author:** Simorq - [Cimorq GitHub](https://github.com/Cimorq)
+* **Powered by these amazing open-source projects:** 
+  * [FFVship](https://codeberg.org/Line-fr/Vship)
+  * [Open Hardware Monitor](https://github.com/HardwareMonitor/openhardwaremonitor)
+  * [FFmpeg-Builds-SVT-AV1-HDR](https://github.com/QuickFatHedgehog/FFmpeg-Builds-SVT-AV1-HDR)
+  * [HandBrake-SVT-AV1-Tritium](https://github.com/Uranite/HandBrake-SVT-AV1-Tritium)
+```
