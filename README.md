@@ -102,4 +102,3 @@ For QualiSVT to calculate Watts (W) and Total Energy (Wh) during encoding:
   * [Open Hardware Monitor](https://github.com/HardwareMonitor/openhardwaremonitor)
   * [FFmpeg-Builds-SVT-AV1-HDR](https://github.com/QuickFatHedgehog/FFmpeg-Builds-SVT-AV1-HDR)
   * [HandBrake-SVT-AV1-Tritium](https://github.com/Uranite/HandBrake-SVT-AV1-Tritium)
-```
