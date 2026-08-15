@@ -1,4 +1,3 @@
-```markdown
 # 🎬 QualiSVT v1.0.2
 **Advanced Video Encoder & Quality Assessment Tool**
 
