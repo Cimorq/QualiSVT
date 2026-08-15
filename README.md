@@ -1,4 +1,4 @@
-# 🎬 QualiSVT v1.0.2
+# 🎬 QualiSVT
 **Advanced Video Encoder & Quality Assessment Tool**
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
