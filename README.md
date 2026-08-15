@@ -3,7 +3,7 @@ Here is the complete, updated `README.md` code. I have completed the Python sect
 You can copy and paste this entire block directly into your GitHub repository:
 
 ```markdown
-# 🎬 QualiSVT v1.0.4
+# 🎬 QualiSVT v1.0.2
 **Advanced Video Encoder & Quality Assessment Tool**
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
